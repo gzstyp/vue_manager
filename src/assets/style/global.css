@@ -1,0 +1,16 @@
+html,body,div,span,table,tr,td,img,form,select,input,#app{
+    padding: 0;
+    margin: 0;
+    border:0;
+    vertical-align:baseline;
+}
+ol,ul{
+    list-style:none;
+}
+a,a:hover{
+    text-decoration:none;
+    outline:none;
+}
+.theme-color{
+    color:#33aef0;
+}

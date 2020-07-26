@@ -1,6 +1,6 @@
 <template>
     <div class="listTable">
-        <el-table :data="tablesData" stripe>
+        <el-table :data="tablesData" stripe height="300">
             <el-table-column label="序号" type="index" width="50"></el-table-column>
             <el-table-column type="selection" align="center" width="35"></el-table-column>
             <el-table-column show-overflow-tooltip  v-for="(item,index) in tablesLabel" :key="item.prop" :label="item.label">
@@ -20,6 +20,15 @@
                 </template>
             </el-table-column>
         </el-table>
+        <el-pagination
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+            :current-page="1"
+            :page-sizes="[2, 4, 10,20]"
+            :page-size="2"
+            layout="total, sizes, prev, pager, next, jumper"
+            :total="6">
+        </el-pagination>
     </div>
 </template>
 <script>
@@ -38,6 +47,12 @@
             handleDelete(index,row){
                 console.info(index);
                 console.info(row);
+            },
+            handleSizeChange(){
+
+            },
+            handleCurrentChange(){
+
             }
         }
     }

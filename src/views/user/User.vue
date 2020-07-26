@@ -50,7 +50,25 @@
                         age : 26,
                         sex : 2,
                         addrs : '云岩区未来方舟'
-                    }
+                    },
+                    {
+                        name : '田应平',
+                        age : 34,
+                        sex : 1,
+                        addrs : '贵阳市小河区'
+                    },
+                    {
+                        name : '田卓智',
+                        age : 5,
+                        sex : 1,
+                        addrs : '小河区万科大都会'
+                    },
+                    {
+                        name : '杨紫',
+                        age : 18,
+                        sex : 2,
+                        addrs : '云岩区未来方舟'
+                    },
                 ],
                 tablesLabel : [
                     {
@@ -76,7 +94,7 @@
                 ],
                 tablesConfig : {
                     page : 1,
-                    total : 30,
+                    total : 6,
                     loading : false
                 }
             }

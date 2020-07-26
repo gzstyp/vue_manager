@@ -1,9 +1,9 @@
 <template>
     <div class="listTable">
-        <el-table :data="tablesData">
+        <el-table :data="tablesData" stripe>
             <el-table-column label="序号" type="index" width="50"></el-table-column>
             <el-table-column type="selection" align="center" width="35"></el-table-column>
-            <el-table-column show-overflow-tooltip stripe v-for="(item,index) in tablesLabel" :key="item.prop" :label="item.label">
+            <el-table-column show-overflow-tooltip  v-for="(item,index) in tablesLabel" :key="item.prop" :label="item.label">
                 <template slot-scope="scope">
                     <span style="margin-left: 10px">{{ scope.row[item.prop]}}</span>
                 </template>

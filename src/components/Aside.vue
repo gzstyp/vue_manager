@@ -39,7 +39,7 @@
             return {
                 asideMenu : [
                     {
-                        url : '/',
+                        url : '/home',
                         name : '首页',
                         icon : 'el-icon-s-home'
                     },

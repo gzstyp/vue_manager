@@ -1,41 +1,44 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Login from '../views/Login';
 import Main from './../views/Main';
 
 Vue.use(VueRouter);
 
   const routes = [
-      {path:'/',component:Main,
+      {path:'/',redirect:'login'},
+      {path:'/login',component:Login},
+      {path:'/home00',component:Main,redirect:'home',
           children:[
               {
-                  path : '/',
-                  name : '/',
-                  component : () => import('@/views/home/Home')
+                  path : '/home',
+                  name : 'home',
+                  component : () => import('@/views/Home')
               },
               {
                   path : '/page1',
                   name : '/page1',
-                  component : () => import('@/views/other/Page1')
+                  component : () => import('@/views/Page1')
               },
               {
                   path : '/page2',
                   name : '/page2',
-                  component : () => import('@/views/other/Page2')
+                  component : () => import('@/views/Page2')
               },
               {
                   path : '/setting',
                   name : '/setting',
-                  component : () => import('@/views/other/Setting')
+                  component : () => import('@/views/Setting')
               },
               {
                   path : '/video',
                   name : '/video',
-                  component : () => import('@/views/video/Video')
+                  component : () => import('@/views/Video')
               },
               {
                   path : '/user',
                   name : '/user',
-                  component : () => import('@/views/user/User')
+                  component : () => import('@/views/User')
               }
           ]
       },

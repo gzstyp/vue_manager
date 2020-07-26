@@ -15,8 +15,8 @@
     </div>
 </template>
 <script>
-    import Form from "../../components/Form";
-    import ListTable from "../../components/ListTable";
+    import Form from "../components/Form";
+    import ListTable from "../components/ListTable";
     export default {
         name: "User",
         components : {Form,ListTable},

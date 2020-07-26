@@ -23,3 +23,10 @@ a,a:hover{
 .el-form--inline{
     height:40px !important;
 }
+html,body,#app{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    text-decoration:none;
+}
